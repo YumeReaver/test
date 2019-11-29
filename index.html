@@ -10,6 +10,15 @@
 </head>
 <body>
     <div class="global-margin">
+        <div class="dropdown-mobile">
+            <select name="МОЙ ПРОФИЛЬ">
+                <option value="">МОЙ ПРОФИЛЬ</option>
+                <option value="">ИСТОРИЯ ЗАКАЗОВ</option>
+                <option value="">УДАЛИТЬ ПРОФИЛЬ</option>
+                <option value="">РЕГИСТРАЦИЯ УСТРОЙСТВА</option>
+                <option value="">ВЫЙТИ</option>
+            </select>
+        </div>
         <div class="flex-row d-flex">
             <div class="flex-column profile-menu">
                 <a class="d-block active" href="#">МОЙ ПРОФИЛЬ</a>
@@ -33,6 +42,7 @@
                             <p>Михаил</p>
                         </div>
                         <div>
+                            <label class="invisible">ИМЯ *</label>
                             <p class="unopened">ОТЧЕСТВО</p>
                         </div>
                         <div>
@@ -64,17 +74,21 @@
                 <div class="d-flex flex-row">
                     <div class="flex-column w-50">
                         <div>
+                            <label class="invisible">ИМЯ *</label>
                             <p class="unopened">УЛИЦА</p>
                         </div>
                         <div>
+                            <label class="invisible">ИМЯ *</label>
                             <p class="unopened">НОМЕР КВАРТИРЫ</p>
                         </div>
                         <div>
+                            <label class="invisible">ИМЯ *</label>
                             <p class="unopened">ПОЧТОВЫЙ ИНДЕКС</p>
                         </div>
                     </div>
                     <div class="flex-column w-50">
                         <div>
+                            <label class="invisible">ИМЯ *</label>
                             <p class="unopened">НОМЕР ДОМА</p>
                         </div>
                         <div>
@@ -94,7 +108,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex-column profile-banner">
+            <div class="d-none d-xl-flex flex-column profile-banner">
                 <a class="d-flex" href="#">
                     <img src="img/icos.jpg" alt="">
                 </a>

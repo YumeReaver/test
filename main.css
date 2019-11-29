@@ -34,6 +34,7 @@ body {
 .profile-menu{
   padding: 5.5rem 3rem;
   background-color: #232324;
+  width: 25rem;
 }
 .profile-personal{
   padding: 3rem 4rem;
@@ -86,4 +87,14 @@ body {
 .unopened{
   color: #a9a9a9;
   align-self: center;
+}
+@media (max-width: 1024px){
+  .global-margin{
+    margin: 2rem 2rem;
+  }
+}
+@media (max-width: 768px){
+  .profile-menu{
+    display: none;
+  }
 }
