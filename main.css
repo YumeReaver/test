@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
+
+body {
+    background: #fff;
+    color: #404040;
+    font-family: "Noto Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 0.7rem;
+    margin: 0;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+  }
+  .global-margin{
+    margin: 2rem 4rem;
+  }
+  p{
+    font-size: .8rem;
+  }
+  a{
+    font-size: .9rem;
+    color: #d6a76f;
+    padding: 1rem 0;
+  }
+  a.active{
+    color: #fff;
+    padding: 0;
+    padding-bottom: 1rem;
+    font-weight: bold;
+  }
+  a:hover{
+    color: #fff;
+    transition: .5s;
+    text-decoration: none;
+  }
+.profile-menu{
+  padding: 5.5rem 3rem;
+  background-color: #232324;
+}
+.profile-personal{
+  padding: 3rem 4rem;
+}
+.profile-personal h5{
+  font-size: 1.125rem;
+  color: #999;
+  align-self: flex-end;
+  margin-bottom: 0;
+}
+.profile-personal button{
+  background: transparent;
+  border: 0.05rem solid #111;
+  color: #111;
+  font-size: .7rem;
+    padding: 0.5rem 1.5rem;
+    letter-spacing: .12rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.profile-banner{
+  background: #d9e0e8;
+}
+.profile-banner a{
+  height: 100%;
+  width: 19rem;
+  position: relative;
+  padding-bottom: 0;
+}
+.profile-banner img{
+  position: absolute;
+  bottom: 0;
+  width: inherit;
+}
+.profile-personal-header{
+  padding-bottom: .5rem;
+  margin-bottom: 1rem;
+}
+.profile-personal label{
+  font-size: .70rem;
+  padding: 0.15rem 0 0 0;
+  letter-spacing: .05rem;
+  color: #404040;
+  opacity: .5;
+  margin: 0;
+}
+.flex-column .very-small{
+  font-size: .6rem;
+}
+.unopened{
+  color: #a9a9a9;
+  align-self: center;
+}
