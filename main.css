@@ -10,15 +10,17 @@ body {
     text-rendering: optimizeLegibility;
   }
   .global-margin{
-    margin: 2rem 4rem;
+    margin: 2rem 5rem;
+    background: #f8f8f8;
   }
   p{
-    font-size: .8rem;
+    font-size: .9rem;
   }
   a{
     font-size: .9rem;
     color: #d6a76f;
     padding: 1rem 0;
+    letter-spacing: .1rem;
   }
   a.active{
     color: #fff;
@@ -32,12 +34,13 @@ body {
     text-decoration: none;
   }
 .profile-menu{
-  padding: 5.5rem 3rem;
+  padding: 8rem 3.5rem;
   background-color: #232324;
-  width: 25rem;
+  width: 20%;
 }
 .profile-personal{
-  padding: 3rem 4rem;
+  padding: 3rem 5rem;
+  background: #fff;
 }
 .profile-personal h5{
   font-size: 1.125rem;
@@ -60,8 +63,9 @@ body {
 }
 .profile-banner a{
   height: 100%;
-  width: 19rem;
+  width: 100%;
   position: relative;
+  right: 0;
   padding-bottom: 0;
 }
 .profile-banner img{
@@ -88,13 +92,73 @@ body {
   color: #a9a9a9;
   align-self: center;
 }
+.bg-black{
+  background: #000 !important;
+}
+.lang-select{
+  border: none;
+  border-bottom: 0.05rem solid #b3b3b3;
+  font-size: .9rem;
+  padding: 0.35rem 0;
+  outline: none;
+}
+.edit-border{
+  border-bottom: 0.05rem solid #ccc;
+  padding: 0.35rem 0;
+  color: #ccc;
+}
+.f-l-s{
+  margin-bottom: 2rem !important;
+}
+.current-pass{
+  margin-bottom: 4rem !important;
+}
 @media (max-width: 1024px){
   .global-margin{
     margin: 2rem 2rem;
+  }
+  .profile-menu{
+    padding: 5rem 2rem;
+  }
+  a{
+    font-size: .75rem;
   }
 }
 @media (max-width: 768px){
   .profile-menu{
     display: none;
+  }
+  .global-margin{
+    margin: 2rem 0;
+  }
+  .profile-personal{
+    padding: 1rem;
+  }
+  .profile-personal .flex-row{
+    flex-direction: column !important;
+  }
+  .profile-personal .w-50{
+    width: 100% !important;
+  }
+  p{
+    font-size: .75rem;
+  }
+  .dropdown-mobile{
+    padding: 1rem;
+  }
+  .dropdown-mobile select{
+    padding: .4rem .5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    font-size: .8rem;
+    background: #333;
+    color: #fff;
+    border: none;
+  }
+  .pr-5, .pl-5{
+    padding: 0 !important;
+  }
+  .current-pass{
+    margin-bottom: 2rem !important;
   }
 }

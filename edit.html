@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-4.4.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="global-margin profile-form">
+        <div class="dropdown-mobile">
+            <select class="d-lg-none w-100" name="МОЙ ПРОФИЛЬ">
+                <option value="">МОЙ ПРОФИЛЬ</option>
+                <option value="">ИСТОРИЯ ЗАКАЗОВ</option>
+                <option value="">УДАЛИТЬ ПРОФИЛЬ</option>
+                <option value="">РЕГИСТРАЦИЯ УСТРОЙСТВА</option>
+                <option value="">ВЫЙТИ</option>
+            </select>
+        </div>
+        <div class="flex-row row d-flex m-0">
+            <div class="flex-column profile-menu">
+                <a class="d-block active" href="#">МОЙ ПРОФИЛЬ</a>
+                <a class="d-block" href="#">ИСТОРИЯ ЗАКАЗОВ</a>
+                <a class="d-block" href="#">УДАЛИТЬ ПРОФИЛЬ</a>
+                <a class="d-block" href="#">РЕГИСТРАЦИЯ УСТРОЙСТВА</a>
+            </div>
+            <div class="flex-column col profile-personal">
+                <div class="d-flex justify-content-between profile-personal-header align-content-end border-bottom">
+                    <h5>Персональные данные</h5>
+                    <div class="d-inline-flex">
+                        <button class="d-none mx-3 d-lg-flex">ОТМЕНА</button>
+                        <button class="d-none bg-black text-white d-lg-flex">СОХРАНИТЬ</button>
+                    </div>
+                </div>
+                <div class="d-flex flex-row">
+                    <div class="flex-column w-50 pr-5">
+                        <div>
+                            <label for="email">EMAIL *</label>
+                            <p class="m-0">bx-fa</p>
+                            <p class="very-small">Ваш адрес электронной почты используется, как логин,<br> поэтому не может быть изменен.</p>
+                        </div>
+                        <div>
+                            <label for="lastname">ФАМИЛИЯ *</label>
+                            <p class="edit-border">Михаил</p>
+                        </div>
+                        <div>
+                            <label class="invisible">ОТЧЕСТВО</label>
+                            <input class="w-100 mb-3 lang-select" type="text" placeholder="ОТЧЕСТВО">
+                        </div>
+                        <div>
+                            <label for="phone">МОБИЛЬНЫЙ ТЕЛЕФОН *</label>
+                            <input class="w-100 mb-3 lang-select" type="tel" value="+7 (702) 201 90 95">
+                        </div>
+                    </div>
+                    <div class="flex-column pl-5 w-50">
+                        <div>
+                            <label for="lang" class="very-small">Предпочитаемый язык для коммуникации</label>
+                            <select class="w-100 mb-3 lang-select f-l-s" value="1">
+                                <option value="1">Русский</option>
+                                <option value="2">Казакша</option>
+                                <option value="3">English</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="lastname">ИМЯ *</label>
+                            <p class="edit-border">Власов</p>
+                        </div>
+                        <div>
+                            <label for="birthdate">ДЕНЬ РОЖДЕНИЯ *</label>
+                            <p class="m-0">13/22/2222</p>
+                            <p>дд/мм/гггг</p>
+                        </div>
+                    </div>
+                </div>
+                <p>Если Ваши хотите изменить персональные данные недоступные для редактирования, например, фамилию, пожалуйста, обратитесь в Службу поддержки.</p>
+                <div class="d-inline-flex mb-3 w-100 justify-content-between d-lg-none">
+                    <button class="d-flex justify-content-center w-50 mr-3 d-lg-none">ОТМЕНА</button>
+                    <button class="d-flex justify-content-center w-50 bg-black text-white d-lg-none">СОХРАНИТЬ</button>
+                </div>
+                <div class="d-flex justify-content-between profile-personal-header border-bottom">
+                    <h5>Адреса</h5>
+                    <div class="d-inline-flex">
+                        <button class="d-none mx-3 d-lg-flex">ОТМЕНА</button>
+                        <button class="d-none bg-black text-white d-lg-flex">СОХРАНИТЬ</button>
+                    </div>
+                </div>
+                <p>Адрес доставки</p>
+                <div class="d-flex flex-row">
+                    <div class="flex-column pr-5 w-50">
+                        <div>
+                            <label class="invisible">УЛИЦА</label>
+                            <input class="w-100 mb-3 lang-select" type="text" placeholder="УЛИЦА">
+                        </div>
+                        <div>
+                            <label class="invisible">НОМЕР КВАРТИРЫ</label>
+                            <input class="w-100 mb-3 lang-select" type="text" placeholder="НОМЕР КВАРТИРЫ">
+                        </div>
+                        <div>
+                            <label class="invisible">ПОЧТОВЫЙ ИНДЕКС</label>
+                            <input class="w-100 mb-3 lang-select" type="text" placeholder="ПОЧТОВЫЙ ИНДЕКС">
+                        </div>
+                    </div>
+                    <div class="flex-column pl-5 w-50">
+                        <div>
+                            <label class="invisible">НОМЕР ДОМА</label>
+                            <input class="w-100 mb-3 lang-select" type="text" placeholder="НОМЕР ДОМА">
+                        </div>
+                        <div>
+                            <label for="city">Город / Населенный пункт</label>
+                            <select class="w-100 mb-3 lang-select" value="1">
+                                <option value="1">Алматы</option>
+                                <option value="2">Актау</option>
+                                <option value="3">Актобе</option>
+                            </select>
+                        </div>
+                        <div class="d-inline-flex mb-3 w-100 justify-content-between d-lg-none">
+                            <button class="d-flex justify-content-center w-50 mr-3 d-lg-none">ОТМЕНА</button>
+                            <button class="d-flex justify-content-center w-50 bg-black text-white d-lg-none">СОХРАНИТЬ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between profile-personal-header border-bottom">
+                    <h5>Изменить пароль</h5>
+                    <div class="d-inline-flex">
+                        <button class="d-none mx-3 d-lg-flex">ОТМЕНА</button>
+                        <button class="d-none bg-black text-white d-lg-flex">СОХРАНИТЬ</button>
+                    </div>
+                </div>
+                <div class="d-flex flex-row">
+                    <div class="flex-column pr-5 w-50">
+                        <div>
+                            <label class="very-small invisible" for="password">Текущий пароль</label>
+                            <input class="w-100 current-pass lang-select" type="text" placeholder="Текущий пароль">
+                        </div>
+                        <div>
+                            <label class="very-small invisible" for="password">Подтверждение нового пароля</label>
+                            <input class="w-100 mb-3 lang-select" type="text" placeholder="Подтверждение нового пароля">
+                        </div>
+                    </div>
+                    <div class="flex-column pl-5 w-50">
+                        <label class="very-small invisible" for="password">Новый пароль</label>
+                        <input class="w-100 lang-select" type="text" placeholder="Новый пароль">
+                        <p>Пароль должен содержать не менее 8 символов и обязательно включать 1 букву в верхнем регистре, 1 букву в нижнем регистре и 1 цифру.</p>
+                    </div>
+                </div>
+                <div class="d-inline-flex mb-3 w-100 justify-content-between d-lg-none">
+                    <button class="d-flex justify-content-center w-50 mr-3 d-lg-none">ОТМЕНА</button>
+                    <button class="d-flex justify-content-center w-50 bg-black text-white d-lg-none">СОХРАНИТЬ</button>
+                </div>
+            </div>
+            <div class="d-none col-3 d-xl-flex flex-column profile-banner p-0 justify-content-end">
+                <a class="d-flex" href="#">
+                    <img src="img/icos.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap-4.4.0-dist/js/bootstrap.min.js"></script>
+    <script></script>
+</body>
+</html>
