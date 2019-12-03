@@ -14,10 +14,11 @@ body {
     background: #f8f8f8;
   }
   p{
-    font-size: .9rem;
+    font-size: .8rem;
+    line-height: 1.3;
   }
   a{
-    font-size: .9rem;
+    font-size: .8rem;
     color: #d6a76f;
     padding: 1rem 0;
     letter-spacing: .1rem;
@@ -113,6 +114,196 @@ body {
 .current-pass{
   margin-bottom: 4rem !important;
 }
+.btn-text {
+  text-decoration: none !important;
+  font-weight: 700;
+  transition-delay: 0s;
+  font-size: .75rem;
+  letter-spacing: .15rem;
+  line-height: 1.8;
+  color: #d6a76f;
+  display: flex;
+  align-content: center;
+  vertical-align: middle;
+}
+.btn-soft:hover{
+  pointer-events: none;
+}
+h6{
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  margin: 0 0 1rem 0;
+}
+h4{
+  margin: 0 0 1rem 0;
+}
+.checkout-total{
+  padding: 2rem 1rem;
+  background: transparent !important;
+  width: 60%;
+}
+.checkout-total a{
+  width: auto !important;
+  height: auto;
+  padding: 0 !important;
+      color: #908f8f;
+    font-size: .6rem;
+  padding: 2rem 1rem;
+  background: transparent !important;
+}
+.checkout-total-header{
+  border-bottom: 2px solid rgba(153,153,153,0.3);
+  padding-bottom: .5rem;
+  margin-bottom: 1rem;
+}
+.checkout-total h5{
+  font-size: .8rem;
+  font-weight: bold;
+}
+.checkout-total h6{
+  font-size: .7rem;
+  letter-spacing: normal;
+}
+.checkout-total p{
+  margin-bottom: .25rem
+}
+.checkout-total img{
+  width: auto;
+  height: 5rem;
+  position: relative;
+}
+.checkout-total .row{
+  max-height: 5rem;
+  height: 100%;
+}
+.img-wrapper{
+  max-height: 5rem;
+}
+.checkout-total .total{
+  border-top: 1px solid rgba(153,153,153,0.4);
+}
+.icon-arrow{
+  position: relative;
+}
+.icon-arrow::before{
+  position: relative;
+  margin-left: .5rem;
+  display: inline-block;
+  transform: translate(0%,50%) rotate(225deg);
+  border: 0.10rem solid currentColor;
+  border-bottom: 0;
+  border-right: 0;
+  content: "";
+  transition: .2s;
+  height: .65rem;
+  width: .65rem;
+}
+.drop-active .icon-arrow::before{
+  transform: translate(0, 60%) rotate(45deg);
+  transition: .2s;
+}
+.total-mobile-dropdown{
+  background: #fff;
+  padding: 1rem 3rem;
+  font-size: .9rem;
+}
+ /* STEPS */
+ .personal-header{
+  margin-right: -5rem;
+  margin-left: -5rem;
+ }
+.step{
+  display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+.step .step-item {
+  line-height: 1;
+  flex: 1 1 0;
+  -ms-flex: 1;
+  margin: 0;
+  padding: 0;
+  min-height: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+.step .step-item a {
+  color: #999;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  width: calc(1.5rem);
+  height: calc(1.5rem);
+}
+.step .step-item:not(:first-child)::before {
+  background: #d6a76f;
+  content: '';
+  height: 1px;
+  left: -50%;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.step .step-item.active ~ .step-item::before {
+  background: #ccc;
+}
+.step .step-item a::before {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  background: #d6a76f;
+  border: 0.05rem solid #d6a76f;
+  border-radius: 50%;
+  content: '';
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  width: calc(1.5rem);
+  height: calc(1.5rem);
+  z-index: 1;
+}
+.step .step-item a[data-content]::after {
+  color: #fff;
+  content: attr(data-content);
+  display: block;
+  font-size: .55rem;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: .08rem;
+  margin: 0 0 0 .08rem;
+  width: calc(1.4rem);
+  transform: translate(0,-51%);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.step .step-item.active a::before {
+  background: #333;
+  border: 0.05rem solid #333;
+}
+.step .step-item.active ~ .step-item a::before {
+  background: #fff;
+  border: 0.05rem solid #ccc;
+  color: #ccc;
+}
+.step .step-item.active ~ .step-item a[data-content]::after {
+  color: #ccc;
+}
+/* /STEPS */
 @media (max-width: 1024px){
   .global-margin{
     margin: 2rem 2rem;
@@ -125,6 +316,13 @@ body {
   }
 }
 @media (max-width: 768px){
+  .personal-header{
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .checkout-window{
+    flex-direction: column-reverse !important;
+  }
   .profile-menu{
     display: none;
   }
@@ -160,5 +358,10 @@ body {
   }
   .current-pass{
     margin-bottom: 2rem !important;
+  }
+  .checkout-total{
+    background: #fff !important;
+    width: 95%;
+    margin: 2.5%;
   }
 }

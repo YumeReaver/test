@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-4.4.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="global-margin">
+        <div class="d-flex d-lg-none total-mobile-dropdown justify-content-end" id="total-drop">
+            <b>Итог<br>77,500 тг.</b>
+            <i class="icon-arrow"></i>
+        </div>
+        <div class="flex-row checkout-window d-flex">
+            <div class="flex-column d-xl-block d-none profile-menu">
+                <a class="d-block active" href="#">Информация о пользователе</a>
+                <a class="d-block" href="#">Адрес плательщика и доставки</a>
+                <a class="d-block" href="#">Оплата</a>
+                <a class="d-block" href="#">Подтверждение</a>
+            </div>
+            <div class="d-flex flex-column profile-personal">
+                <div class="personal-header">
+                    <h4 class="d-lg-none text-center">Адрес плательщика и доставки</h4>
+                    <ul class="step">
+                        <li class="step-item">
+                            <a data-content="01"></a>
+                        </li>
+                        <li class="step-item active">
+                            <a href="#" data-content="02"></a>
+                        </li>
+                        <li class="step-item">
+                            <a data-content="03"></a>
+                        </li>
+                        <li class="step-item">
+                            <a data-content="04"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex justify-content-between">
+                        <a class="d-flex justify-content-center align-content-center" href="#">
+                                <span class="btn-icon px-2">
+                                    <span class="icon-wrap">
+                                        <svg width="32" height="12" viewBox="0 0 32 12"><path class="path path-gold" d="M1.4,4.6L1.4,4.6l4.2-4.2l1.4,1.4L3.8,5h27.8v2H3.8l3.2,3.2l-1.4,1.4L0,6L1.4,4.6z"></path></svg>
+                                    </span>
+                                </span>
+                                <span class="btn-text" style="color: #a6a6a6;">Назад</span>
+                        </a>
+                        <a class="d-flex justify-content-center align-content-center" href="#">
+                                <span class="btn-text">Следующий шаг</span>
+                                <span class="btn-icon px-2">
+                                    <span class="icon-wrap">
+                                            <svg width="32" height="12" viewBox="0 0 32 12">
+                                                    <path class="path path-arrow" d="M30.243,7.414 L30.242,7.414 L26.000,11.656 L24.586,10.242 L27.828,7.000 L-0.000,7.000 L-0.000,4.999 L27.828,4.999 L24.586,1.757 L26.000,0.343 L31.657,6.000 L30.243,7.414 Z"></path>
+                                                </svg>
+                                    </span>
+                                </span>
+                        </a>
+                </div>
+            </div>
+            <div class="d-none d-lg-flex profile-banner flex-column checkout-total">
+                    <div class="d-flex justify-content-between checkout-total-header align-content-end">
+                        <h5 class="m-0">ИТОГ</h5>
+                        <a class="d-flex align-self-end" href="#">РЕДАКТИРОВАТЬ</a>
+                    </div>
+                    <h6>ЗАКАЗАННЫЕ ТОВАРЫ</h6>
+                    <div class="row my-3">
+                        <div class="col-lg-4 col-3 col-sm-2 img-wrapper">
+                            <img src="img/28.png" alt="">
+                        </div>
+                        <div class="col-lg-8 col-9 col-sm-10">
+                            <p>Электрическая система нагревания табака IQOS™ 3 DUO (Терракотовый)</p>
+                            <div class="inline-flex">
+                                <span>Кол-во 2</span>
+                                <span class="pr-2">74,000 тг.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-lg-4 col-3 col-sm-2 img-wrapper">
+                            <img src="img/28.png" alt="">
+                        </div>
+                        <div class="col-lg-8 col-9 col-sm-10">
+                            <p>Силиконовый чехол для IQOS 3 MULTIТемно-Оловянный</p>
+                            <span>DW000185.00</span>
+                            <div class="inline-flex">
+                                <span>Кол-во 1</span>
+                                <span class="pr-2">3,000 тг.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="total pt-2 mt-2">
+                        <div class="d-flex mb-2 justify-content-between">
+                            <b>Итого</b>
+                            <span>77,500 тг.</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <b>Доставка</b>
+                            <span>0 тг.</span>
+                        </div>
+                    </div>
+                    <div class="total pt-2 mt-2">
+                        <div class="d-flex justify-content-between">
+                            <b>Итого</b>
+                            <span>77,500 тг.</span>
+                        </div>
+                        <span>(Включая налог)</span>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap-4.4.0-dist/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
