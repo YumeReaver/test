@@ -303,7 +303,82 @@ h4{
 .step .step-item.active ~ .step-item a[data-content]::after {
   color: #ccc;
 }
+.text-link{
+  color: #d6a76f;
+  letter-spacing: normal;
+}
+.text-link:hover{
+  color: #d6a76f;
+}
 /* /STEPS */
+
+/* icon checkbox */
+
+.icon-checkbox {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.icon-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: transparent;
+  border: 1px solid #b3b3b3;
+}
+
+/* On mouse-over, add a grey background color */
+/* .icon-checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+} */
+
+/* When the checkbox is checked, add a blue background */
+/* .icon-checkbox input:checked ~ .checkmark {
+  background-color: #2196F3;
+} */
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.icon-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.icon-checkbox .checkmark:after {
+  left: .5rem;
+  width: .5rem;
+  height: 1rem;
+  border: 0.10rem solid #666;
+  border-width: 0 0.10rem 0.10rem 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* /icon checkbox */
+
 @media (max-width: 1024px){
   .global-margin{
     margin: 2rem 2rem;
@@ -363,5 +438,10 @@ h4{
     background: #fff !important;
     width: 95%;
     margin: 2.5%;
+  }
+}
+@media (min-width: 1025px){
+  .profile-personal{
+    min-width: 55%;
   }
 }
